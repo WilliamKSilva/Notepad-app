@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "notepad-app",
+    "slug": "notepad-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "notepad-app"
+}
