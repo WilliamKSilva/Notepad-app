@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { Button } from "../../components/Button";
 import { InputForm } from "../../components/InputForm";
 import { TextLink } from "../../components/TextLink";
-import { Container, Logo, WrapperLogo, Title, WrapperContent } from "./styles";
+import { Container, Logo, WrapperLogo, Title, WrapperContent, WrapperLinks } from "./styles";
 
 export function Login() {
     const { control, formState: { errors } } = useForm();
@@ -34,9 +34,16 @@ export function Login() {
                 <Button 
                     title="LogIn"
                 />
-                <TextLink 
-                    title="Esqueci minha senha!"
-                />
+                <WrapperLinks>
+                    <TextLink 
+                        title="Esqueci minha senha!"
+                        routeName=""
+                    />
+                    <TextLink 
+                        title="Resgistrar-se"
+                        routeName="Register"
+                    />
+                </WrapperLinks>
             </WrapperContent>            
         </Container>
     );

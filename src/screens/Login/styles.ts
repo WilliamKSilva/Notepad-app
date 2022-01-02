@@ -33,6 +33,11 @@ export const WrapperContent = styled.View`
     align-items: center;        
 `;
 
+export const WrapperLinks = styled.View`
+    flex-direction: row;
+    justify-content: space-between;
+`;
+
 
 
 

@@ -5,7 +5,7 @@ export const defaultTheme = {
         primary: "#3d518c",
         secondary: "#7692ff",
 
-        background: "#fef8fa",
+        background: "#000814",
         input: "#9f9aa4",
         text: "#202020", 
     },
