@@ -11,8 +11,9 @@ interface Props extends TouchableOpacityProps {
 export function TextLink({title, routeName}: Props) {
     const navigation = useNavigation();
     
-    return (
-        <Container onPress={() => navigation.navigate(routeName as never)}>
+    return (        
+        // Not the best practice, searching for a better approach!        
+        <Container onPress={() => navigation.navigate(routeName as never)}> 
             <Title>
                 {title}
             </Title>
