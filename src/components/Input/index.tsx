@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { TextInputProps } from "react-native";
 import { useTheme } from "styled-components";
 import { Container } from "./styles";
 
-type Props = TextInputProps 
+interface Props extends TextInputProps {
+    isFocused: boolean;
+};
 
-export function Input({...rest}: Props) {
-    const { colors } = useTheme();
+export function Input({isFocused, ...rest}: Props) {
+    const { colors } = useTheme();        
     
     return (
-        <Container {...rest} placeholderTextColor="#FFFFFF"/>
+        <Container isFocused={isFocused} {...rest} placeholderTextColor={colors.text} />
     );
 }

@@ -7,4 +7,5 @@ export const Container = styled.View`
 export const Title = styled.Text`
     font-size: ${({ theme }) => theme.fontsize.font_small}px;
     color: ${({ theme }) => theme.colors.text};
+    text-decoration: underline;
 `;

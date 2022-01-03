@@ -21,7 +21,7 @@ export function Login() {
                     name="login"
                     required
                     error={errors.login?.message}                    
-                    autoCapitalize="none"
+                    autoCapitalize="none"                                        
                 />
                 <InputForm 
                     placeholder="Senha"

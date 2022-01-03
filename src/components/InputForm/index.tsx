@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Controller, Control } from "react-hook-form";
 import { Text, TextInputProps } from "react-native";
 import { Input } from "../Input";
@@ -12,7 +12,8 @@ interface Props extends TextInputProps {
     required?: boolean;
 }
 
-export function InputForm({control, name, error, placeholder, required, ...rest}: Props) {
+export function InputForm({control, name, error, placeholder, required, ...rest}: Props) {    
+    const [ isFocused, setIsFocused ] = useState(false);
 
     return (
         <Container>
@@ -21,8 +22,11 @@ export function InputForm({control, name, error, placeholder, required, ...rest}
                 render={({field: { onChange, value }}) => (
                     <Input 
                         onChangeText={onChange}
+                        onFocus={() => setIsFocused(true)}
+                        onBlur={() => setIsFocused(false)}                       
                         placeholder={placeholder}                        
                         value={value}
+                        isFocused={isFocused}                                                                       
                         {...rest}
                     />
                 )}

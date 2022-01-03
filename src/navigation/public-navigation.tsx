@@ -13,9 +13,11 @@ export function PublicNavigation() {
             backgroundColor: colors.primary,
             height: 100
         },
-        headerTitleAlign: 'center'
-        
-        
+        headerTitleAlign: 'center',
+        headerTitleStyle: {
+            color: colors.text
+        },
+        headerTintColor: colors.text                       
     }
 
     return (

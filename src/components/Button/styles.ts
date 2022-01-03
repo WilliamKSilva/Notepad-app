@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 
 export const Container = styled.TouchableOpacity`     
     width: 100%;
-    background-color: ${({theme}) => theme.colors.secondary};
+    background-color: ${({theme}) => theme.colors.primary_light};
     padding: ${({theme}) => theme.constants.padding_medium}%;
     margin-top: ${({theme}) => theme.constants.margin_large}%;
     min-width: 50px;
