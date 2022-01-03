@@ -1,18 +1,25 @@
 import React from "react";
-import { createStackNavigator } from '@react-navigation/stack'
+import { createStackNavigator, StackNavigationOptions } from '@react-navigation/stack'
 import { Login } from "../screens/Login";
 import { Register } from "../screens/Register";
-
-export interface RootStackParamList {
-    Login: undefined;
-    Register: undefined;
-}
+import { useTheme } from "styled-components/native";
 
 export function PublicNavigation() {
-    const Stack = createStackNavigator();
+    const Stack = createStackNavigator();  
+    const { colors, constants, fontsize } = useTheme();   
     
+    const options: StackNavigationOptions = {
+        headerStyle: {            
+            backgroundColor: colors.primary,
+            height: 100
+        },
+        headerTitleAlign: 'center'
+        
+        
+    }
+
     return (
-        <Stack.Navigator initialRouteName="Login">
+        <Stack.Navigator initialRouteName="Login" screenOptions={{...options}}>
             <Stack.Screen
                 name="Login"
                 component={Login}
@@ -22,10 +29,7 @@ export function PublicNavigation() {
             />
             <Stack.Screen
                 name="Register"
-                component={Register}
-                options={{
-                    headerShown: false
-                }}
+                component={Register}                
             />
         </Stack.Navigator>
     )
