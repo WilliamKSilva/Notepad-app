@@ -11,13 +11,14 @@ export function PublicNavigation() {
     const options: StackNavigationOptions = {
         headerStyle: {            
             backgroundColor: colors.primary,
-            height: 100
+            height: 90
         },
         headerTitleAlign: 'center',
         headerTitleStyle: {
-            color: colors.text
+            color: colors.background,
+            
         },
-        headerTintColor: colors.text                       
+        headerTintColor: colors.background                       
     }
 
     return (

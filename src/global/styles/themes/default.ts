@@ -2,14 +2,14 @@ import { RFValue } from 'react-native-responsive-fontsize'
 
 export const defaultTheme = {    
     colors: {
-        primary: "#3d518c",
-        primary_light: "#7692ff",
+        primary: "#00506c",
+        primary_light: "#3a86ff",
 
         secondary: "#f6bd60",
 
-        background: "#000814",
-        input: "#9f9aa4",
-        text: "#FFFFFF", 
+        background: "#FFFFFF",
+        input: "#ced4da",
+        text: "#000000",
     },
 
     fontsize: {

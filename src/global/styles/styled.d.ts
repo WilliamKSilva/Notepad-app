@@ -10,7 +10,7 @@ declare module 'styled-components' {
 
             background: string;
             input: string;
-            text: string;                              
+            text: string;                          
         },
 
         fontsize: {
