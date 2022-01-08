@@ -1,3 +1,4 @@
+import { useNavigation } from "@react-navigation/core";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Button } from "../../components/Button";
@@ -7,6 +8,7 @@ import { Container, Logo, WrapperLogo, Title, WrapperContent, WrapperLinks } fro
 
 export function Login() {
     const { control, formState: { errors } } = useForm();
+    const navigation = useNavigation();
     
     return (
         <Container>                
@@ -33,11 +35,12 @@ export function Login() {
                 />
                 <Button 
                     title="LogIn"
+                    onPress={() => navigation.navigate('Home')}
                 />
                 <WrapperLinks>
                     <TextLink 
                         title="Esqueci minha senha!"
-                        routeName=""
+                        routeName="ChangePassword"
                     />
                     <TextLink 
                         title="Resgistrar-se"

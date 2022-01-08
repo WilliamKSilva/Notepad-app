@@ -8,13 +8,10 @@ import { Text } from "../../components/Text";
 import { Container, Title, WrapperButton, WrapperInput } from "./styles";
 
 export function Register() {
-    const { control, formState: { errors } } = useForm();
-
     return (
         <Container>                       
             <CardInput title="Insira suas informações:" />
-            <WrapperButton>
-                
+            <WrapperButton>                
                 <Button title="Enviar"/>
             </WrapperButton>      
         </Container>

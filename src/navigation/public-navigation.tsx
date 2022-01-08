@@ -3,6 +3,7 @@ import { createStackNavigator, StackNavigationOptions } from '@react-navigation/
 import { Login } from "../screens/Login";
 import { Register } from "../screens/Register";
 import { useTheme } from "styled-components/native";
+import { ChangePassword } from "../screens/ChangePassword";
 
 export function PublicNavigation() {
     const Stack = createStackNavigator();  
@@ -32,7 +33,17 @@ export function PublicNavigation() {
             />
             <Stack.Screen
                 name="Register"
-                component={Register}                
+                component={Register}
+                options={{
+                    title: 'Registro'
+                }}                
+            />
+            <Stack.Screen
+                name="ChangePassword"
+                component={ChangePassword}
+                options={{
+                    title: 'Atualização de senha'
+                }}                
             />
         </Stack.Navigator>
     )
