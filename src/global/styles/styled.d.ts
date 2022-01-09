@@ -13,6 +13,12 @@ declare module 'styled-components' {
             text: string;                          
         },
 
+        fonts: {
+            font_regular: string;
+            font_medium: string;
+            font_bold: string;
+        }
+
         fontsize: {
             font_small: number;
             font_medium: number;

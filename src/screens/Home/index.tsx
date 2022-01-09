@@ -1,16 +1,24 @@
+import { useNavigation } from "@react-navigation/core";
 import React from "react";
 import { NotesList } from "../../components/NotesList";
-import { Text } from "../../components/Text";
 import { notes } from "../../utils/notes";
-import { Container, Content, Greeting, Header, Icon } from "./styles";
+import { AddIcon, Clickable, Container, Content, Greeting, Header, Icon, Title, WrapperTitle } from "./styles";
 
 export function Home() {
+    const navigation = useNavigation();
+
     return (
         <Container>
             <Header>
-                <Greeting>Olá,{"\n"}Bom dia!</Greeting>
+                <Greeting>Olá, William</Greeting>
                 <Icon name="menu"/>
             </Header>
+            <WrapperTitle>
+                <Title>Suas anotações:</Title>
+                <Clickable onPress={() => navigation.navigate("TextArea")}>
+                    <AddIcon name="post-add" size={50}/>
+                </Clickable>
+            </WrapperTitle>
             <Content>
                 <NotesList 
                     dataNotes={notes}

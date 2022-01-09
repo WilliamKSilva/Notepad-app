@@ -26,9 +26,10 @@ export function NotesList({ dataNotes }: Props) {
             keyExtractor={(item: any) => item.id}
             columnWrapperStyle={{
                 justifyContent: 'space-between',
-                padding: 10
-                
+                padding: 7,                
             }}
+            showsVerticalScrollIndicator
+            alwaysBounceVertical
         />
     );
 }

@@ -1,7 +1,9 @@
 import React from "react";
 import { createStackNavigator, StackNavigationOptions } from "@react-navigation/stack";
 import { useTheme } from "styled-components";
+
 import { Home } from "../screens/Home";
+import { TextArea } from "../screens/TextArea";
 
 export function PrivateNavigation() {
     const Stack = createStackNavigator();  
@@ -28,7 +30,14 @@ export function PrivateNavigation() {
                 options={{ 
                     headerShown: false               
                 }}
-        />
+            />
+            <Stack.Screen
+                name="TextArea"
+                component={TextArea}
+                options={{ 
+                    headerShown: false               
+                }}
+            />
         </Stack.Navigator>
     );
 }

@@ -6,8 +6,7 @@ import { PrivateNavigation } from "./private-navigation";
 export function Navigation() {    
     
     return (
-       <NavigationContainer>
-            
+       <NavigationContainer>            
             <PrivateNavigation />
        </NavigationContainer>
     );

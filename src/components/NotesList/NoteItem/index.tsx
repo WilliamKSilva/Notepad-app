@@ -8,13 +8,16 @@ export interface ListItem {
 }
 
 export function NoteItem({name, content, ...rest}: ListItem) {
+    const filterName = name.slice(0, 18) + '...';
+    const filterContent = content.slice(0, 33) + '...'
+
     return (
         <Container {...rest}>
             <Header>
-                <Title>{name}</Title>
+                <Title>{filterName}</Title>
             </Header>
             <Footer>
-                <Content>{content}</Content>
+                <Content>{filterContent}</Content>
             </Footer>
         </Container>
     );

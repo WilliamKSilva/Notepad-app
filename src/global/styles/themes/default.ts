@@ -6,11 +6,17 @@ export const defaultTheme = {
         primary: "#00506c",
         primary_light: "#3a86ff",
 
-        secondary: "#f6bd60",
+        secondary: "#ffc300",
 
         background: "#FFFFFF",
         input: "#ced4da",
         text: "#000000",
+    },
+
+    fonts: {
+        font_regular: 'Roboto_400Regular',
+        font_medium: 'Roboto_500Medium',
+        font_bold: 'Roboto_700Bold',
     },
 
     fontsize: {
