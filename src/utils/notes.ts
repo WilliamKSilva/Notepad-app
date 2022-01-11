@@ -1,43 +1,43 @@
 const notes = [
     {
         id: '1',
-        name: 'Estudar React',
-        content: 'Estudar reactjs amanhãyuasgdyuayusdgasd'
+        name: 'Study React',
+        content: 'Read about hooks and'
     },
     {
         id: '2',
-        name: 'Estudar React',
-        content: 'Estudar reactjs amanhã'
+        name: 'Carrot cake recipe!!',
+        content: '1/2 xícara (chá) de óleo'
     },
     {
         id: '3',
-        name: 'Estudar React',
-        content: 'Se aprofundar nos react hooks e dar enfâseoiasjduiashduiasasuidhuasdh'
+        name: 'NodeJS article',
+        content: 'Node is a very powerful tool to build'
     },
     {
         id: '4',
-        name: 'Estudar React',
-        content: 'Estudar reactjsajidhasihjdbyuasghdyuasdamanhãauisdhsuidhuias'
+        name: 'Buy new clothes',
+        content: 'Dont forget to buy'
     },
     {
         id: '5',
-        name: 'Estudar React',
-        content: 'Se aprofundar nos react hooks e dar enfâseoiasjduiashduiasasuidhuasdh'
+        name: 'Beutiful poem',
+        content: 'Imagine a beuatiful poem :p'
     },
     {
         id: '6',
-        name: 'Estudar React',
-        content: 'Estudar reactjsajidhasihjdbyuasghdyuasdamanhãauisdhsuidhuias'
+        name: 'Movie review',
+        content: 'Interestelar is awesome, its my favorite movie'
     },
     {
         id: '7',
-        name: 'Estudar React',
-        content: 'Se aprofundar nos react hooks e dar enfâseoiasjduiashduiasasuidhuasdh'
+        name: 'Funny joke',
+        content: 'Imagine a funny joke :P'
     },
     {
         id: '8',
-        name: 'Estudar React',
-        content: 'Estudar reactjsajidhasihjdbyuasghdyuasdamanhãauisdhsuidhuias'
+        name: 'Water my plants',
+        content: 'Dont forget to water my plants'
     },
     {
         id: '9',

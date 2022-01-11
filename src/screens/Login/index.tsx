@@ -26,7 +26,7 @@ export function Login() {
                     autoCapitalize="none"                                        
                 />
                 <InputForm 
-                    placeholder="Senha"
+                    placeholder="Password"
                     control={control}
                     name="password"
                     required
@@ -39,11 +39,11 @@ export function Login() {
                 />
                 <WrapperLinks>
                     <TextLink 
-                        title="Esqueci minha senha!"
+                        title="Forgot password?"
                         routeName="ChangePassword"
                     />
                     <TextLink 
-                        title="Resgistrar-se"
+                        title="Register"
                         routeName="Register"
                     />
                 </WrapperLinks>

@@ -34,8 +34,9 @@ export const WrapperContent = styled.View`
 `;
 
 export const WrapperLinks = styled.View`
+    width: 80%;
     flex-direction: row;
-    justify-content: space-between;
+    margin-left: 10%;
 `;
 
 

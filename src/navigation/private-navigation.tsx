@@ -4,6 +4,7 @@ import { useTheme } from "styled-components";
 
 import { Home } from "../screens/Home";
 import { TextArea } from "../screens/TextArea";
+import { Login } from "../screens/Login";
 
 export function PrivateNavigation() {
     const Stack = createStackNavigator();  
@@ -23,7 +24,7 @@ export function PrivateNavigation() {
     }
     
     return (
-        <Stack.Navigator initialRouteName="Home">
+        <Stack.Navigator initialRouteName="Home" screenOptions={{...options}}>
             <Stack.Screen
                 name="Home"
                 component={Home}
@@ -35,7 +36,7 @@ export function PrivateNavigation() {
                 name="TextArea"
                 component={TextArea}
                 options={{ 
-                    headerShown: false               
+                    title: "Notas"             
                 }}
             />
         </Stack.Navigator>

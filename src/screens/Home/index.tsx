@@ -10,11 +10,10 @@ export function Home() {
     return (
         <Container>
             <Header>
-                <Greeting>Olá, William</Greeting>
+                <Greeting>Hello, William</Greeting>
                 <Icon name="menu"/>
             </Header>
-            <WrapperTitle>
-                <Title>Suas anotações:</Title>
+            <WrapperTitle>                
                 <Clickable onPress={() => navigation.navigate("TextArea")}>
                     <AddIcon name="post-add" size={50}/>
                 </Clickable>
