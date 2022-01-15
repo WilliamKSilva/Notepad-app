@@ -16,7 +16,7 @@ export const Header = styled.View`
 
 export const WrapperButton = styled.View`
     width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100%;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
 `;

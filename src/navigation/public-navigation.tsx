@@ -38,12 +38,12 @@ export function PublicNavigation() {
                     title: 'Registro'
                 }}                
             />
-            <Stack.Screen
+            <Stack.Screen 
                 name="ChangePassword"
                 component={ChangePassword}
                 options={{
                     title: 'Atualização de senha'
-                }}                
+                }}
             />
         </Stack.Navigator>
     )

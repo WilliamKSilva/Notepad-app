@@ -12,7 +12,7 @@ export function TextArea() {
     return (
         <Container>
             <Header>
-                <Input placeholder="Título..." placeholderTextColor="#ffc300" maxLength={32}/>
+                <Input placeholder="Título..." placeholderTextColor="#ffc300" maxLength={300}/>
             </Header>
             <InputArea />
             <WrapperButton>

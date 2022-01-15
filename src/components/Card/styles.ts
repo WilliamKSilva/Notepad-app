@@ -27,6 +27,7 @@ export const Title = styled.Text`
   font-size: ${({ theme }) => theme.fontsize.font_small}px;
   color: ${({theme}) => theme.colors.background};
   text-decoration: solid;
+  font-family: ${({ theme }) => theme.fonts.font_medium};
 
   margin-right: 35%;
 `;

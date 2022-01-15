@@ -5,10 +5,10 @@ import { Container, Header, Title, WrapperContent } from "./styles";
 
 interface Props {
     title: string;
+    children: React.ReactNode
 }
 
-export function CardInput({title}: Props) {
-    const { control, formState: { errors } } = useForm();
+export function CardInput({title, children}: Props) {    
 
     return (
         <Container>
@@ -16,30 +16,7 @@ export function CardInput({title}: Props) {
                 <Title>{title}</Title>
             </Header>            
             <WrapperContent>
-                <InputForm 
-                    control={control}                    
-                    name="name"
-                    placeholder="Nome"
-                    required
-                    error={errors.name?.message}
-                    autoCapitalize="sentences"
-                />
-                <InputForm 
-                    control={control}                    
-                    name="email"
-                    placeholder="Email"
-                    required
-                    error={errors.email?.message}
-                    autoCapitalize="none"
-                />
-                <InputForm 
-                    control={control}                    
-                    name="password"
-                    placeholder="Senha"
-                    required
-                    error={errors.password?.message}
-                    autoCapitalize="none"
-                />                    
+                {children}                    
             </WrapperContent>
     </Container>
     )   

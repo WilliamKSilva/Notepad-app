@@ -7,7 +7,7 @@ export function Navigation() {
     
     return (
        <NavigationContainer>            
-            <PrivateNavigation />
+            <PublicNavigation />
        </NavigationContainer>
     );
 }

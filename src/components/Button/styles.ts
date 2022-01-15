@@ -14,5 +14,6 @@ export const Container = styled.TouchableOpacity`
 
 export const Title = styled.Text`
     color: ${({ theme }) => theme.colors.background};
-    font-size: ${({theme}) => theme.fontsize.font_medium}px;    
+    font-size: ${({theme}) => theme.fontsize.font_medium}px;
+    font-family: ${({ theme }) => theme.fonts.font_bold};    
 `;
